@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Member progress
+An app to aid new members of our church receive a friend, a calling and to be nourished by the good word of God. Based off the Latter-day Saints new and returning member report.
+
+Using AWS Amplify Admin UI and front-end libraries.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
