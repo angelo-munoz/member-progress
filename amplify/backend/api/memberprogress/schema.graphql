@@ -1,0 +1,13 @@
+type Member @model {
+  id: ID!
+  name: String!
+  description: String
+  hasMetBishop: String
+  priesthoodOffice: String
+  newMemberLessonsComplete: String
+  ministeringPerson: String
+  calling: String
+  attendedTemple: String
+  unitName: String
+  stakeName: String
+}
