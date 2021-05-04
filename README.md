@@ -3,6 +3,25 @@ An app to aid new members of our church receive a friend, a calling and to be no
 
 Using AWS Amplify Admin UI and front-end libraries.
 
+## Features
+- Create new member
+ - which fields are required? name
+ - process: enter name and click `Add member`. The member's profile page appears to edit.
+- View list of members
+    - Clicking a member from the list opens his/her profile
+- Edit single member properties on his/her profile page
+    - Can edit any field on that person's profile
+    - Instant save with any edit
+- Reports
+    - unit members action report
+    - activity report (most recent activity)
+    - KPI/dashboard
+
+## Access control
+- Login required
+- Reporting access for the reports
+- Reporting2 access for stake-level reports
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

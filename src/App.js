@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Amplify, { API, graphqlOperation } from 'aws-amplify'
 import { createMember } from './graphql/mutations'
 import { listMembers } from './graphql/queries'
+import { Button } from '@material-ui/core'
 
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
@@ -106,7 +107,7 @@ const App = () => {
         value={formState.stakeName}
         placeholder="stakeName"
       />
-      <button style={styles.button} onClick={addTodo}>Create Member</button>
+      <Button color="primary" variant="contained" onClick={addTodo}>Create Member</Button>
       {
         todos.map((todo, index) => (
           <div key={todo.id ? todo.id : index} style={styles.todo}>
