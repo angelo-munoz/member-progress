@@ -112,6 +112,9 @@ const App = () => {
           <div key={todo.id ? todo.id : index} style={styles.todo}>
             <p style={styles.todoName}>{todo.name}</p>
             <p style={styles.todoDescription}>{todo.description}</p>
+            <p style={styles.todoDescription}>{todo.hasMetBishop}</p>
+            <p style={styles.todoDescription}>{todo.priesthoodOffice}</p>
+            <p style={styles.todoDescription}>{todo.calling}</p>
           </div>
         ))
       }
