@@ -16,6 +16,8 @@ Using AWS Amplify Admin UI and front-end libraries.
     - unit members action report
     - activity report (most recent activity)
     - KPI/dashboard
+- Notifications
+    - weekly reports emailed to ward council. Contains all members
 
 ## Access control
 - Login required
