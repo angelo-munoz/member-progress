@@ -1,5 +1,5 @@
 # Member progress
-An app to aid new members of our church receive a friend, a calling and to be nourished by the good word of God. Based off the Latter-day Saints new and returning member report.
+An app to aid new members of our church receive a friend, a responsibility and to be nourished by the good word of God. Based off the Latter-day Saints new and returning member report.
 
 Using React, AWS Amplify Admin UI and front-end libraries.
 
