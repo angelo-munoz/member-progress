@@ -34,7 +34,8 @@ const App = () => {
 
   async function addTodo() {
     try {
-      if (!formState.name || !formState.description) return
+      //if (!formState.name || !formState.description) return
+      if (!formState.name) {alert('oops, missing name'); return;}
       const todo = { ...formState }
       setTodos([...todos, todo])
       setFormState(initialState)
@@ -51,62 +52,8 @@ const App = () => {
         onChange={event => setInput('name', event.target.value)}
         style={styles.input}
         value={formState.name}
-        placeholder="Name"
-      />
-      <input
-        onChange={event => setInput('description', event.target.value)}
-        style={styles.input}
-        value={formState.description}
-        placeholder="Description"
-      />
-      <input
-        onChange={event => setInput('hasMetBishop', event.target.value)}
-        style={styles.input}
-        value={formState.hasMetBishop}
-        placeholder="hasMetBishop"
-      />
-      <input
-        onChange={event => setInput('priesthoodOffice', event.target.value)}
-        style={styles.input}
-        value={formState.priesthoodOffice}
-        placeholder="priesthoodOffice"
-      />
-      <input
-        onChange={event => setInput('newMemberLessonsComplete', event.target.value)}
-        style={styles.input}
-        value={formState.newMemberLessonsComplete}
-        placeholder="newMemberLessonsComplete"
-      />
-      <input
-        onChange={event => setInput('ministeringPerson', event.target.value)}
-        style={styles.input}
-        value={formState.ministeringPerson}
-        placeholder="ministeringPerson"
-      />
-      <input
-        onChange={event => setInput('calling', event.target.value)}
-        style={styles.input}
-        value={formState.calling}
-        placeholder="calling"
-      />
-      <input
-        onChange={event => setInput('attendedTemple', event.target.value)}
-        style={styles.input}
-        value={formState.attendedTemple}
-        placeholder="attendedTemple"
-      />
-      <input
-        onChange={event => setInput('unitName', event.target.value)}
-        style={styles.input}
-        value={formState.unitName}
-        placeholder="unitName"
-      />
-      <input
-        onChange={event => setInput('stakeName', event.target.value)}
-        style={styles.input}
-        value={formState.stakeName}
-        placeholder="stakeName"
-      />
+        placeholder="Name" 
+        />      
       <Button color="primary" variant="contained" onClick={addTodo}>Create Member</Button>
       {
         todos.map((todo, index) => (
