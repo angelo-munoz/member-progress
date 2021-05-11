@@ -71,7 +71,7 @@ const App = () => {
 
 const styles = {
   container: { width: 400, margin: '0 auto', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 20 },
-  todo: {  marginBottom: 15 },
+  todo: {  margin: '10 0 15 0' , border: '1px solid #ccc', borderRadius: '10px', padding: '15px'},
   input: { border: 'none', backgroundColor: '#ddd', marginBottom: 10, padding: 8, fontSize: 18 },
   todoName: { fontSize: 20, fontWeight: 'bold' },
   todoDescription: { marginBottom: 0 },
