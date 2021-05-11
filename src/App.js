@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Amplify, { API, graphqlOperation } from 'aws-amplify'
 import { createMember } from './graphql/mutations'
 import { listMembers } from './graphql/queries'
-import { Button } from '@material-ui/core'
+import { Button, StylesProvider } from '@material-ui/core'
 
 import awsExports from "./aws-exports";
 Amplify.configure(awsExports);
@@ -111,11 +111,10 @@ const App = () => {
       {
         todos.map((todo, index) => (
           <div key={todo.id ? todo.id : index} style={styles.todo}>
-            <p style={styles.todoName}>{todo.name}</p>
-            <p style={styles.todoDescription}>{todo.description}</p>
-            <p style={styles.todoDescription}>{todo.hasMetBishop}</p>
-            <p style={styles.todoDescription}>{todo.priesthoodOffice}</p>
-            <p style={styles.todoDescription}>{todo.calling}</p>
+          <h1>{todo.name}</h1>
+          <span>Has met bishop: {todo.hasMetBishop}</span>
+          <span>Priesthood: {todo.priesthoodOffice}</span>
+          <span>Calling: {todo.calling}</span>            
           </div>
         ))
       }
