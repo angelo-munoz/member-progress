@@ -59,11 +59,15 @@ const App = () => {
         todos.map((todo, index) => (
           <div key={todo.id ? todo.id : index} style={styles.todo}>
           <h1>{todo.name}</h1>
-          <p style={styles.milestone}>Has met bishop: <select>
-            <options>Yes</options>
-            <options>No</options>
+          <p style={styles.milestone}>Has met bishop: 
+          <select id='test'>
+            <option>Yes</option>
+            <option>No</option>
           </select></p>
-          <p style={styles.milestone}>Priesthood: {todo.priesthoodOffice}</p>
+          <p style={styles.milestone}>Priesthood: <select id='test'>
+          <option>Priest</option>
+          <option>No</option>
+        </select></p>
           <p style={styles.milestone}>New Member lessons: {todo.newMemberLessonsComplete}</p>  
           <p style={styles.milestone}>Ministering Brother/Sister: {todo.ministeringPerson}</p>  
           <p style={styles.milestone}>Calling: {todo.calling}</p>  
