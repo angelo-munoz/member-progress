@@ -59,9 +59,15 @@ const App = () => {
         todos.map((todo, index) => (
           <div key={todo.id ? todo.id : index} style={styles.todo}>
           <h1>{todo.name}</h1>
-          <span>Has met bishop: {todo.hasMetBishop}</span>
-          <span>Priesthood: {todo.priesthoodOffice}</span>
-          <span>Calling: {todo.calling}</span>            
+          <p style={styles.milestone}>Has met bishop: <select>
+            <options>Yes</options>
+            <options>No</options>
+          </select></p>
+          <p style={styles.milestone}>Priesthood: {todo.priesthoodOffice}</p>
+          <p style={styles.milestone}>New Member lessons: {todo.newMemberLessonsComplete}</p>  
+          <p style={styles.milestone}>Ministering Brother/Sister: {todo.ministeringPerson}</p>  
+          <p style={styles.milestone}>Calling: {todo.calling}</p>  
+          <p style={styles.milestone}>Attended Temple: {todo.attendedTemple}</p>                        
           </div>
         ))
       }
@@ -70,12 +76,12 @@ const App = () => {
 }
 
 const styles = {
-  container: { width: 400, margin: '0 auto', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 20 },
-  todo: {  margin: '10 0 15 0' , border: '1px solid #ccc', borderRadius: '10px', padding: '15px'},
+  container: { width: '50%', margin: '0 auto', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 20 },
+  todo: { margin: '5px auto' , border: '1px solid #ccc', borderRadius: '1em', padding: '1em'},
   input: { border: 'none', backgroundColor: '#ddd', marginBottom: 10, padding: 8, fontSize: 18 },
   todoName: { fontSize: 20, fontWeight: 'bold' },
-  todoDescription: { marginBottom: 0 },
-  button: { backgroundColor: 'black', color: 'white', outline: 'none', fontSize: 18, padding: '12px 0px' }
+  todoDescription: { marginBottom: 0 }, 
+  milestone: { display:'inline', margin:'auto 5px' }
 }
 
 export default App
