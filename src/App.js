@@ -77,8 +77,8 @@ const App = () => {
           <option>5</option>
           <option>6</option>          
         </select></p>  
-          <p style={styles.milestone}>Ministering Brother/Sister: <input value='{todo.ministeringPerson}' /></p>  
-          <p style={styles.milestone}>Calling: <input value="{todo.calling}" /></p>  
+          <p style={styles.milestone}>Ministering Brother/Sister: <input value={todo.ministeringPerson} /></p>  
+          <p style={styles.milestone}>Calling: <input value={todo.calling} /></p>  
           <p style={styles.milestone}>Attended Temple: <select>
           <option>Yes</option>
           <option>No</option>
