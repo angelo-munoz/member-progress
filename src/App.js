@@ -60,18 +60,29 @@ const App = () => {
           <div key={todo.id ? todo.id : index} style={styles.todo}>
           <h1>{todo.name}</h1>
           <p style={styles.milestone}>Has met bishop: 
-          <select id='test'>
+          <select>
             <option>Yes</option>
             <option>No</option>
           </select></p>
-          <p style={styles.milestone}>Priesthood: <select id='test'>
+          <p style={styles.milestone}>Priesthood: <select>
           <option>Priest</option>
           <option>No</option>
         </select></p>
-          <p style={styles.milestone}>New Member lessons: {todo.newMemberLessonsComplete}</p>  
-          <p style={styles.milestone}>Ministering Brother/Sister: {todo.ministeringPerson}</p>  
-          <p style={styles.milestone}>Calling: {todo.calling}</p>  
-          <p style={styles.milestone}>Attended Temple: {todo.attendedTemple}</p>                        
+          <p style={styles.milestone}>New Member lessons: <select>
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>          
+        </select></p>  
+          <p style={styles.milestone}>Ministering Brother/Sister: <input value='{todo.ministeringPerson}' /></p>  
+          <p style={styles.milestone}>Calling: <input value="{todo.calling}" /></p>  
+          <p style={styles.milestone}>Attended Temple: <select>
+          <option>Yes</option>
+          <option>No</option>
+        </select></p>                        
           </div>
         ))
       }
