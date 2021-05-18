@@ -25,7 +25,7 @@ Using [Reactjs](https://reactjs.org/), [Material UI](https://material-ui.com/), 
 - Reporting2 access for stake-level reports
 
 ## Todo
-- research wireframe tools. 
+- research wireframe tools. - done
 
 ## Getting Started with Create React App
 
